@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: url(web-wallpaper.jpg) no-repeat center center;
+    background-size:cover; /*makes it streach to fill the screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: black;
+    background-color: rgba(255,255,255,0.20);
+    border-radius: 2em;
+    border:2px solid black;
+    padding: 4em 3em;
+}
+.title{
+    font-size:3em;
+
+}
+hr{
+    width: 100%;
+    background-color: rgb(227, 221, 195);
+    height: 5px;
+    border-radius: 1em;
+    border: none;
+}
+.timer{
+    font-size: 10em;
+    font-weight: 700;
+}
+
+.button{
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+button:hover{
+    transform: translateY(-10px);
+}
+#Start{
+    background-color: rgb(182, 232, 182);
+
+}
+#Stop{
+    background-color: rgb(230, 174, 174);
+}
+#Reset{
+    background-color: rgb(179, 179, 234);
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left:43%;
+    transform: translate(-50%,-50%);
+    padding:30px;
+    width:450px;
+    font-size:5em;
+    border-radius:15px;
+    text-align: center;
+   
+    display: none;
+    z-index: 1000;
+
+}
+
+.popup img{
+    width: 496px;
+    
+   
+}
